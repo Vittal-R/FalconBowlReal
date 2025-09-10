@@ -1,3 +1,15 @@
+const fileInput = document.getElementById('fileInput');
+const questionElement = document.getElementById('question');
+const buzzBtn = document.getElementById('buzzBtn');
+const answerArea = document.getElementById('answerArea');
+const answerInput = document.getElementById('answerInput');
+const submitAnswer = document.getElementById('submitAnswer');
+const resultElement = document.getElementById('result');
+const questionHeader = document.getElementById('questionHeader');
+const pointsDisplay = document.getElementById('pointsDisplay'); 
+const categoryModal = document.getElementById('categoryModal');
+const categoryButtons = document.getElementById('categoryButtons');
+const timerElement = document.getElementById('timer');
 
 console.log("start");
 
