@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>+
+    <div id="categoryModal" class="modal">
+    <div class="modal-content">
+      <h2>Select a Category</h2>
+      <div id="categoryButtons"></div>
+    </div>
+  </div>
+  <input type="file" id="fileInput" accept=".json">
+  <div class="quiz-container">
+    <h2 id="questionHeader">Quarter 1 - Question 1</h2>
+    <div id="timer" style="font-size: 24px; font-weight: bold;"></div>
+    <h1> FalconBowl </h1>
+    <div id="question" class="question-text"></div>
+
+    <div id="answerArea" class="answer-area" style="display:none">
+      <input type="text" id="answerInput" placeholder="Type your answer here">
+      <button id="submitAnswer">Submit</button>
+    </div>
+
+    <button id="buzzBtn" class="buzz-btn">Buzz</button>
+    <div id="result" class="result"></div>
+    <div id="pointsDisplay">Points: 0</div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

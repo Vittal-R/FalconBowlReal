@@ -1,0 +1,169 @@
+/* General page styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #000000, #222222);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+  color: #ffea00; /* Bright yellow text */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffea00; /* Yellow header */
+  text-shadow: 1px 1px 5px #000; /* Slight glow effect */
+}
+
+/* Container for the quiz */
+.quiz-container {
+  background: #111111;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #ffea00;
+}
+
+/* File input */
+#fileInput {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid;
+  background: #000;
+  color: #ffea00;
+  border-color: #000;
+  cursor: pointer;
+}
+/*
+#fileInput:hover {
+  background: #000;
+  color: #ffea00;
+  border-color: #000;
+}
+*/
+
+/* Question text */
+#question {
+  font-size: 1.4em;
+  min-height: 60px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #333;
+  border-radius: 10px;
+  line-height: 1.5;
+  color: #ffea00;
+  border: 2px solid #ffea00;
+}
+
+/* Answer input area */
+#answerArea {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#answerInput {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #ffea00;
+  margin-right: 10px;
+  background: #222;
+  color: #ffea00;
+}
+
+#answerInput::placeholder {
+  color: #ffea00aa;
+}
+
+/* Buttons */
+button {
+  background: #ffea00;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #000;
+  color: #ffea00;
+  border: 2px solid #ffea00;
+}
+
+#nextBtn {
+  display: none;
+  margin-top: 10px;
+}
+
+/* Result text */
+#result {
+  font-size: 1.2em;
+  font-weight: bold;
+  min-height: 30px;
+  margin-bottom: 10px;
+  color: #ffea00;
+  text-shadow: 1px 1px 3px #000;
+}
+
+/* Timer */
+#timer {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #ffea00;
+  margin-bottom: 10px;
+}
+
+/* Modal */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 100; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  background-color: #111;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  border: 2px solid #ffea00;
+  color: #ffea00;
+}
+
+.modal-content button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #ffea00;
+  color: #000;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.modal-content button:hover {
+  background: #000;
+  color: #ffea00;
+  border: 2px solid #ffea00;
+}
